@@ -9,6 +9,8 @@ import { BodyComponent } from './components/body/body.component';
 import { LowercaseComponent } from './components/lowercase/lowercase.component';
 import { UppercaseComponent } from './components/uppercase/uppercase.component';
 import { TitlecaseComponent } from './components/titlecase/titlecase.component';
+import { JsonComponent } from './components/json/json.component';
+import { SliceComponent } from './components/slice/slice.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { TitlecaseComponent } from './components/titlecase/titlecase.component';
     BodyComponent,
     LowercaseComponent,
     UppercaseComponent,
-    TitlecaseComponent
+    TitlecaseComponent,
+    SliceComponent,
+    JsonComponent
   ],
   imports: [
     BrowserModule,
