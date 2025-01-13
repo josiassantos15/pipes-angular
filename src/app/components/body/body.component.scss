@@ -38,22 +38,11 @@
 }
 
 .layout-container {
+  margin-top: 3.5rem;
   display: flex;
   flex-direction: column;
   min-height: 100vh !important;
-}
-
-.main-header {
-  background: var(--white);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  box-sizing: inherit;
-  margin: 0 auto;
-  display: flex;
-  width: 100%;
-}
-
-.main-content {
+  padding-top: 4rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -62,59 +51,18 @@
   padding: 1rem;
   box-sizing: inherit;
   position: relative;
-  background-color: var(--white-pearl);
+  background-color: var(--white-pearl); 
 }
 
-.main-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1rem;
-  background: var(--white);
+.main-card {
+  width: 90%;
+  max-width: 1440px !important;
+  margin: 1rem 1rem auto;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-  p {
-    // margin: 0;
-    padding: 1rem;
-    color: var(--gray-500);
-  }
-}
-
-.social-links {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-img {
-  max-width: 40px;
-  max-height: 40px;
-  border-radius: 50%;
-}
-
-p {
-  margin: 0;
-  color: var(--hot-red);
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-h1 {
-  font-size: 3.125rem;
-  color: var(--gray-900);
-  font-weight: 500;
-  line-height: 100%;
-  letter-spacing: -0.125rem;
-  margin: 0;
-  font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  border-radius: 0.5rem;
 }
 
 h2 {
-  // font-size: 3.125rem;
   color: var(--gray-900);
   font-weight: 500;
   line-height: 100%;
@@ -138,8 +86,8 @@ p {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  max-width: 700px;
-  margin-bottom: 3rem;
+  max-width: 1440px;
+  margin: 1rem auto;
 }
 
 .content-main {
@@ -147,25 +95,15 @@ p {
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  max-width: 700px;
-  margin-bottom: 3rem;
-}
-
-.content-docs {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
-  max-width: 700px;
-  margin-bottom: 3rem;
-}
+  max-width: 1440px;
+} 
 
 .content h1 {
-  margin-top: 1.75rem;
+  margin-top: 0.5rem;
 }
 
 .content p {
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 .divider {
@@ -220,22 +158,6 @@ p {
 
 .pill-group svg {
   margin-inline-start: 0.25rem;
-}
-
-.social-links {
-  display: flex;
-  align-items: center;
-  gap: 0.73rem;
-  margin-top: 1.5rem;
-}
-
-.social-links path {
-  transition: fill 0.3s ease;
-  fill: var(--gray-400);
-}
-
-.social-links a:hover svg path {
-  fill: var(--gray-900);
 }
 
 @media screen and (max-width: 650px) {

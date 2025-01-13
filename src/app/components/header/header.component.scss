@@ -37,54 +37,25 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-// .main-header {
-//   background: var(--white);
-//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-//   padding: 1.5rem;
-//   box-sizing: inherit;
-//   margin: 0 auto;
-//   display: flex;
-//   width: 100%;
-// }
-
-// .angular-logo {
-//   max-width: 9.2rem;
-// }
-
-// Linkedin
 header {
-  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  background-color: var(--white);
 
   .global-nav__content {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
 
     .logo {
       width: 40px;
-    }
-
-    .global-nav__search {
-      display: flex;
-      align-items: center;
-
-      .search-global-typeahead__input {
-        padding: 0.5rem;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-      }
-
-      .search-global-typeahead__collapsed-search-button {
-        background: none;
-        border: none;
-        cursor: pointer;
-
-        .search-icon {
-          font-size: 1.2rem;
-        }
-      }
     }
 
     .global-nav__nav {
@@ -99,11 +70,11 @@ header {
 
           a {
             text-decoration: none;
-            color: #333;
+            color: var(--primary-color);
             font-size: 1rem;
 
             &:hover {
-              color: #0073b1;
+              color: var(--bright-blue);
             }
           }
         }
