@@ -11,6 +11,7 @@ import { UppercaseComponent } from './components/uppercase/uppercase.component';
 import { TitlecaseComponent } from './components/titlecase/titlecase.component';
 import { JsonComponent } from './components/json/json.component';
 import { SliceComponent } from './components/slice/slice.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SliceComponent } from './components/slice/slice.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
